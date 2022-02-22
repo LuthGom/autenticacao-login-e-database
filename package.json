@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node ./src/app.js",
-    "dev": "nodemon ./src/app.js"
+    "start": "node ./backEnd/src/app.js",
+    "dev": "nodemon ./backEnd/src/app.js"
   },
   "repository": {
     "type": "git",

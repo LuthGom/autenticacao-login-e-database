@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style/index.css" />
-    <script src="../js/index.js"></script>
+    <script src="../js/index.js" defer></script>
     <title>Página de Login</title>
   </head>
   <body>
@@ -20,20 +20,20 @@
       <h1>Faça o seu Login</h1>
     </header>
     <main>
-      <div>
+      <div class="inputs">
         <div>
-          <span class="input-group-text "  id="inputGroup-sizing-lg">
+          <span class="input-group-text" id="inputGroup-sizing-lg">
             <input
               type="text"
               class="form-control"
               name="usuario"
-              id="usario"
+              id="usuario"
               placeholder="USUÁRIO"
             />
           </span>
         </div>
         <div>
-          <span class="input-group-text"  id="inputGroup-sizing-lg">
+          <span class="input-group-text" id="inputGroup-sizing-lg">
             <input
               type="password"
               class="form-control"
@@ -43,9 +43,9 @@
             />
           </span>
         </div>
-      </div>
-      <div>
-        <button type="submit" class="btn btn-dark">LOGIN</button>
+        <div>
+          <button type="submit" class="btn btn-dark">LOGIN</button>
+        </div>
       </div>
     </main>
   </body>

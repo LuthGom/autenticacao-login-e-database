@@ -1,18 +1,52 @@
-h1 {
-    text-align: center;
-    padding-top: 2em ;
+body {
+  display: grid;
+  background: linear-gradient(45deg, #00e1fd, #fc007a);
+  background-size: 300% 300%;
+  animation: bg-tr 5s ease-in-out infinite;
 }
-main{
-    height: 80%;
-}.inputs{
-    height: 100%;
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin: 1.5em;
+  color:aliceblue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bemVindo{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* width: fit-content; */
+    border: 1px groove whitesmoke;
+}
+.inputs {
+  height: 100%;
+  border: 1px solid white;
+  padding: 3.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: currentColor;
+}
+div.divButton {
+  display: flex;
+  justify-content: center;
+}
+span {
+  margin: 1em;
 }
 
-span {
-    margin: 1em;
+@keyframes bg-tr {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

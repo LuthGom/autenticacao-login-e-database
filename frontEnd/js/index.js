@@ -29,9 +29,9 @@ function redirecionaPagina(outraPagina) {
 
 function validaDados(inputs, data) {
     if (inputs.usuario === data.usuario && inputs.senha === data.senha) {
-        location.replace('bemVindo.html')
+        location.replace('/bemVindo.html')
     } else {
-   
+        console.log('erro');
         erro.innerHTML = `
         <p>usuario ou senha incorretos!
         `

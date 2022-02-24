@@ -29,9 +29,15 @@ function redirecionaPagina(outraPagina) {
 
 function validaDados(inputs, data) {
     if (inputs.usuario === data.usuario && inputs.senha === data.senha) {
+<<<<<<< HEAD
+        location.replace('/bemVindo.html')
+    } else {
+        console.log('erro');
+=======
         location.replace('bemVindo.html')
     } else {
    
+>>>>>>> parent of 1bd1368 (Ajuste no método POST no backend)
         erro.innerHTML = `
         <p>usuario ou senha incorretos!
         `

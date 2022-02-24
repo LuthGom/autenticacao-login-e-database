@@ -29,17 +29,14 @@ function redirecionaPagina(outraPagina) {
 }
 
 function validaDados(inputs, data) {
-    if (!inputs.usuario === data.usuario || !inputs.senha === data.senha) {
-        console.log('erro');
-        const erro = document.getElementById('erro')
+    if (inputs.usuario === data.usuario && inputs.senha === data.senha) {
+        location.replace('frontEnd/html/bemVindo.html')
+    } else {
+   
         erro.innerHTML = `
         <p>usuario ou senha incorretos!
         `
         erro.style.color = 'white';
         erro.style.textAlign = 'center'
-    } else {
-
-        location.replace('bemVindo.html')
-
-    }
+    } 
 }

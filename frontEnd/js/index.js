@@ -1,6 +1,7 @@
 const usuario = document.getElementById('usuario')
 const senha = document.getElementById('senha')
 const submitButton = document.querySelector('button')
+const mensagemDeErro = document.getElementById('erro')
 const autenticacaoDeLogin = submitButton.addEventListener('click', function submit(e) {
     e.preventDefault();
     const login = { usuario: usuario.value, senha: senha.value }
@@ -28,15 +29,17 @@ function redirecionaPagina(outraPagina) {
 }
 
 function validaDados(inputs, data) {
-    if (inputs.usuario === data.usuario && inputs.senha === data.senha) {
-        location.replace('/bemVindo.html')
-    } else {
+    if (!inputs.usuario === data.usuario || !inputs.senha === data.senha) {
         console.log('erro');
+        const erro = document.getElementById('erro')
         erro.innerHTML = `
         <p>usuario ou senha incorretos!
         `
         erro.style.color = 'white';
         erro.style.textAlign = 'center'
+    } else {
+
+        location.replace('bemVindo.html')
 
     }
 }

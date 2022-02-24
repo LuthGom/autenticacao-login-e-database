@@ -21,9 +21,10 @@ module.exports = (app) => {
                 console.log(usuario, senha);
                 if(usuario === bd.usuario && senha === bd.senha) {
                     return res.status(200).json({usuario, senha})
-                } else {
-                    return res.status(500).json('usuario ou senha incorretos')
                 }
+                //  else {
+                //     return res.status(500).json('usuario ou senha incorretos')
+                // }
             } catch (erro) {
                 console.log(erro);
                 return res.status(500).json({erro: erro.message})

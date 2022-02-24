@@ -1,6 +1,5 @@
 // const Usuarios = require('../model/Usuarios');
 const bd = require('../infra/bd')
-console.log(bd);
 module.exports = (app) => {
     app
         .get('/', async (req, res) => {
@@ -15,17 +14,15 @@ module.exports = (app) => {
         })
         .post('/login', (req, res) => {
             try {
-                const {usuario, senha} = req.body;
-                console.log(usuario, senha);
-                if(usuario === bd.usuario && senha === bd.senha) {
-                    return res.status(200).json({usuario, senha})
+                const { usuario, senha } = req.body;
+                if (usuario === bd.usuario && senha === bd.senha) {
+                    return res.status(200).json({ usuario, senha })
                 }
-                 else {
+                else {
                     return res.status(500).json('usuario ou senha incorretos')
                 }
             } catch (erro) {
-                console.log(erro);
-                return res.status(500).json({erro: erro.message})
+                return res.status(500).json({ erro: erro.message })
             }
         })
 

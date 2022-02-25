@@ -1,10 +1,12 @@
 # Projeto de Autenticação de Login (Front e Back) e Banco de Dados
+-------------------------------------------------------------------
 
 ## FrontEnd - Página de Login e Requisição ao BackEnd
 
 ## BackEnd - Api de autenticação de Login
 
 ## Bando de Dados - Tabelas de Produtos, Categorias e Usuarios
+----------------------------------------------------------------------
 
 ## O projeto foi criado para rodar localmente nas máquinas, utilizando container do docker e bando de dados mysql. Então, recomenda-se fortemente que baixe pelo menos o docker em sua máquina.
 
@@ -26,6 +28,8 @@
 
 ## Para gerar os dados esperados no bando de dados, rode os scripts contidos na pasta bandoDeDados deste repositório.
 
+--------------------------------------------------------------------------------------------------
+
 ## No terminal no caminho deste repositório, rode o comando baixar todas as dependências do backEnd:
 
 <p> npm install </p>
@@ -33,6 +37,15 @@
 ## Rode o comando abaixo para rodar o backend:
 
 <p> npm start</p>
+
+## Após rodar o comando acima, você pode fazer login no frontEnd na página de login. Basta abrir o arquivo index.html na linha principal no navegador para usufruir. O Login esperado é o:
+
+<ul>
+    <li>Campo USUÁRIO: magalu</li>
+    <li>Campo SENHA: m@galu123</li>
+
+</ul>
+------------------------------
 
 ## Rotas do BackEnd
 
@@ -45,11 +58,3 @@
 
 ## GET
 ### http://localhost:3000
-
-## Após rodar o comando acima, você pode fazer login no frontEnd na página de login. Basta abrir o arquivo index.html na linha principal no navegador para usufruir. O Login esperado é o:
-
-<ul>
-    <li>Campo USUÁRIO: magalu</li>
-    <li>Campo SENHA: m@galu123</li>
-
-</ul>

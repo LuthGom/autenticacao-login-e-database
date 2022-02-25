@@ -13,6 +13,13 @@ class Usuario {
     static listarTodosOsUsuarios() {
         return UsuarioDao.listaTodosOsUsuarios();
     }
+    static async buscaPorUsuario(usuario) {
+        const buscaUsuario = await UsuarioDao.buscaPorUsuario(usuario);
+        if(!usuario) {
+            return 'não encontrado!'
+        }
+        return buscaUsuario
+    }
 }
 
 module.exports = Usuario;

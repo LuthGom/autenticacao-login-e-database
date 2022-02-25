@@ -5,9 +5,8 @@ const mensagemDeErro = document.getElementById('erro')
 const autenticacaoDeLogin = submitButton.addEventListener('click', function submit(e) {
     e.preventDefault();
     const login = { usuario: usuario.value, senha: senha.value }
-
     const loginRequest = () => {
-        fetch(`https://autenticacao-login.herokuapp.com/login`, {
+        fetch(`http://localhost:3000/login`, {
             method: "POST",
             body: JSON.stringify(login),
             headers: {
@@ -17,8 +16,7 @@ const autenticacaoDeLogin = submitButton.addEventListener('click', function subm
         })
             .then((resp) => resp.json())
             .then((database) => {
-
-                validaDados(login, database)
+                validaDados(login, database,)
             })
             .catch((err) => console.log({ testandoErro: err }));
     }

@@ -1,4 +1,4 @@
-module.exports = {
-    usuario: 'magalu',
-    senha: 'm@galu123'
-}
+// module.exports = {
+//     usuario: 'magalu',
+//     senha: 'm@galu123'
+// }

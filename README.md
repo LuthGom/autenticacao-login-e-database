@@ -37,12 +37,14 @@
 ## Rotas do BackEnd
 
 <p>Requisição de Login </p>
-### POST
-http://localhost:3000/login
+
+## POST
+### http://localhost:3000/login
 
 <p>Retorna Todos os Usuários existentes no banco de dados </p>
-### GET
-http://localhost:3000
+
+## GET
+### http://localhost:3000
 
 ## Após rodar o comando acima, você pode fazer login no frontEnd na página de login. Basta abrir o arquivo index.html na linha principal no navegador para usufruir. O Login esperado é o:
 

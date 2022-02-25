@@ -1,14 +1,14 @@
-### Projeto de Autenticação de Login (Front e Back) e Banco de Dados
+# Projeto de Autenticação de Login (Front e Back) e Banco de Dados
 
-# FrontEnd - Página de Login e Requisição ao BackEnd
+## FrontEnd - Página de Login e Requisição ao BackEnd
 
-# BackEnd - Api de autenticação de Login
+## BackEnd - Api de autenticação de Login
 
-# Bando de Dados - Tabelas de Produtos, Categorias e Usuarios
+## Bando de Dados - Tabelas de Produtos, Categorias e Usuarios
 
 ## O projeto foi criado para rodar localmente nas máquinas, utilizando container do docker e bando de dados mysql. Então, recomenda-se fortemente que baixe pelo menos o docker em sua máquina.
 
-# Após baixar o docker, rode os seguintes comandos no terminal para: puxar a imagem oficial do mysql do dockerhub, gerar um container db local com base na imagem do mysql puxada e conferir se está rodando, respectivamente.
+## Após baixar o docker, rode os seguintes comandos no terminal para: puxar a imagem oficial do mysql do dockerhub, gerar um container db local com base na imagem do mysql puxada e conferir se está rodando, respectivamente.
 
 <ul>
     <li>docker pull mysql</li>

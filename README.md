@@ -10,6 +10,9 @@
 
 ## O projeto foi criado para rodar localmente nas máquinas, utilizando container do docker e bando de dados mysql. Então, recomenda-se fortemente que baixe pelo menos o docker em sua máquina.
 
+## Para baixar esse repositório, rode o seguinte comando no terminal na sua máquina:
+### git clone https://github.com/LuthGom/autenticacao-login-e-database.git
+
 ## Após baixar o docker, rode os seguintes comandos no terminal para: puxar a imagem oficial do mysql do dockerhub, gerar um container db local com base na imagem do mysql puxada e conferir se está rodando, respectivamente.
 
 <ul>

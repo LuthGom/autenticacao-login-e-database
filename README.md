@@ -1,14 +1,19 @@
-### Projeto de Autenticação de Login (Front e Back) e Banco de Dados
+# Projeto de Autenticação de Login (Front e Back) e Banco de Dados
+-------------------------------------------------------------------
 
-# FrontEnd - Página de Login e Requisição ao BackEnd
+## FrontEnd - Página de Login e Requisição ao BackEnd
 
-# BackEnd - Api de autenticação de Login
+## BackEnd - Api de autenticação de Login
 
-# Bando de Dados - Tabelas de Produtos, Categorias e Usuarios
+## Bando de Dados - Tabelas de Produtos, Categorias e Usuarios
+----------------------------------------------------------------------
 
 ## O projeto foi criado para rodar localmente nas máquinas, utilizando container do docker e bando de dados mysql. Então, recomenda-se fortemente que baixe pelo menos o docker em sua máquina.
 
-# Após baixar o docker, rode os seguintes comandos no terminal para: puxar a imagem oficial do mysql do dockerhub, gerar um container db local com base na imagem do mysql puxada e conferir se está rodando, respectivamente.
+## Para baixar esse repositório, rode o seguinte comando no terminal na sua máquina:
+### git clone https://github.com/LuthGom/autenticacao-login-e-database.git
+
+## Após baixar o docker, rode os seguintes comandos no terminal para: puxar a imagem oficial do mysql do dockerhub, gerar um container db local com base na imagem do mysql puxada e conferir se está rodando, respectivamente.
 
 <ul>
     <li>docker pull mysql</li>
@@ -26,6 +31,8 @@
 
 ## Para gerar os dados esperados no bando de dados, rode os scripts contidos na pasta bandoDeDados deste repositório.
 
+--------------------------------------------------------------------------------------------------
+
 ## No terminal no caminho deste repositório, rode o comando baixar todas as dependências do backEnd:
 
 <p> npm install </p>
@@ -41,3 +48,16 @@
     <li>Campo SENHA: m@galu123</li>
 
 </ul>
+------------------------------
+
+## Rotas do BackEnd
+
+<p>Requisição de Login </p>
+
+## POST
+### http://localhost:3000/login
+
+<p>Retorna Todos os Usuários existentes no banco de dados </p>
+
+## GET
+### http://localhost:3000
